@@ -25,7 +25,7 @@ gulp.task('connect', function () {
 
 gulp.task('open', ['connect'], function () {
     gulp.src('dist/index.html')
-        .pipe(open({
+        .pipe(open('', {
             url: config.devBaseUrl + ':' + config.port + '/'
         }));
 });
